@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Pendaftaran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="detail-container">
+      <div class="detail-card">
+        <h1>Detail Informasi Pendaftaran</h1>
+        <table>
+          <tr>
+            <th>Nama Lengkap</th>
+            <td id="namaDetail">-</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td id="emailDetail">-</td>
+          </tr>
+          <tr>
+            <th>Nomor HP</th>
+            <td id="nohpDetail">-</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      function getQueryParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          nama: params.get("nama"),
+          email: params.get("email"),
+          nohp: params.get("nohp"),
+        };
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const queryParams = getQueryParams();
+        document.getElementById("namaDetail").textContent =
+          queryParams.nama || "Data tidak tersedia";
+        document.getElementById("emailDetail").textContent =
+          queryParams.email || "Data tidak tersedia";
+        document.getElementById("nohpDetail").textContent =
+          queryParams.nohp || "Data tidak tersedia";
+      });
+    </script>
+  </body>
+</html>
