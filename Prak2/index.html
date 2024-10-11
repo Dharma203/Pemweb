@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Profile</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <label for="toggle" class="icon">&#9776;</label>
+      <input type="checkbox" id="toggle" />
+      <nav class="navbar">
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#github">Github</a></li>
+          <li><a href="#skill">Skill</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="profile">
+        <h1>Profile</h1>
+        <p>
+          Hai, perkenalkan nama saya <strong>Dharma Rizki Geraldo</strong>,
+          seorang mahasiswa semester 5 di Institut Teknologi Sumatera Prodi
+          Teknik Informatika.
+        </p>
+      </section>
+      <section id="github">
+        <h1>Github</h1>
+        <p>
+          Ini merupakan link Github saya:
+          <a
+            href="https://github.com/Dharma203"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://github.com/Dharma203
+          </a>
+        </p>
+      </section>
+      <section id="skill">
+        <h1>Skill</h1>
+        <p>Skill saya:</p>
+        <ul>
+          <li>Bermain game</li>
+          <li>Coding</li>
+          <li>Cepat tanggap</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      &copy; <span id="year"></span> Dharma Rizki Geraldo
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

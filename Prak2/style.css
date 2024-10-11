@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+h1 {
+  margin-top: 20px;
+  margin-left: 115px;
+}
+p {
+  margin-top: 0px;
+  margin-left: 115px;
+}
+ul li {
+  margin-top: 0px;
+  margin-left: 115px;
+}
+ul {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.icon {
+  color: white;
+  background-color: #333;
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  z-index: 1000;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 10px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  transform: translateX(0px);
+  transition: transform 0.5s ease;
+  z-index: 999;
+  background-color: #333;
+  padding-top: 10px;
+}
+#togle {
+  display: none;
+}
+
+#togle:checked ~ .navbar {
+  transform: translateX(-100px);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  text-align: center;
+  margin: 20px 0;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: bacground-color 0.3s ease;
+}
+.navbar a:hover {
+  background-color: #555;
+}
+.navbar p {
+  color: white;
+  font-size: 20px;
+  text-align: right;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  margin-top: auto;
+  width: 100%;
+  z-index: 1000;
+}
