@@ -1,0 +1,239 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+.profil_container img {
+  margin: 15px;
+  width: 125px;
+  height: 125px;
+  margin-top: 25px;
+  float: left;
+}
+.main {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.profil_container p {
+  text-align: justify;
+}
+.profil_container {
+  transform: translateX(100px);
+  margin: 20px;
+  margin-right: 120px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px;
+  border-radius: 8px;
+}
+.github_container {
+  transform: translateX(100px);
+  margin: 20px;
+  margin-right: 120px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px;
+  border-radius: 8px;
+}
+.hobi_container {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100px);
+  margin: 20px;
+  margin-right: 120px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px;
+  border-radius: 8px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 999;
+  background-color: darkblue;
+  padding-top: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  text-align: center;
+  margin: 20px 0;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: bacground-color 0.3s ease;
+}
+.navbar a:hover {
+  background-color: darkblue;
+}
+.navbar p {
+  color: white;
+  font-size: 20px;
+  text-align: right;
+}
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  margin-top: auto;
+  width: 100%;
+  z-index: 1000;
+}
+.gambar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.gambar img {
+  width: 70px;
+  height: 70px;
+}
+.game {
+  display: grid;
+  place-items: center;
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.coding {
+  display: grid;
+  place-items: center;
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.nonton {
+  display: grid;
+  place-items: center;
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px;
+  margin: 10px;
+  padding: 10px;
+}
+@media (max-width: 750px) {
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profil_container img {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+  }
+  .main {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+  .main p {
+    text-align: justify;
+  }
+  .main h1 {
+    text-align: center;
+  }
+  .profil_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0px);
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px;
+    border-radius: 8px;
+  }
+  .github_container {
+    transform: translateX(0px);
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px;
+    border-radius: 8px;
+  }
+  .hobi_container {
+    transform: translateX(0px);
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px;
+    border-radius: 8px;
+  }
+  .navbar {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+    background-color: darkblue;
+  }
+
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar li {
+    display: inline-block;
+    margin: 0px 15px;
+  }
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: bacground-color 0.3s ease;
+  }
+  .navbar a:hover {
+    background-color: darkblue;
+  }
+  .navbar p {
+    color: white;
+    font-size: 20px;
+    text-align: right;
+  }
+  .gambar {
+    display: flex;
+    flex-direction: column;
+  }
+  .gambar img {
+    width: 50px;
+    height: 50px;
+  }
+  .game {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+  }
+  .coding {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+  }
+  .nonton {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+  }
+}
