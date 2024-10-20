@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Halaman Pendaftaran</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <img src="Logo.png" width="150px" height="50px" alt="Logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Halaman Utama.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Halaman Tabel.html">Daftar Fans</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="bg-section text-white text-center"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        padding: 100px 0;
+      "
+    >
+      <section class="form-section">
+        <div class="container form-container">
+          <h2 class="card-title text-center">Formulir Pendaftaran</h2>
+          <form
+            action="Halaman Tabel.html"
+            method="GET"
+            itemscope
+            itemtype="http://schema.org/ContactForm"
+          >
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Masukkan nama Anda"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Masukkan email Anda"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Nomor Telepon</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Masukkan nomor telepon Anda"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="country">Negara</label>
+              <select class="form-control" id="country" required>
+                <option value="">Pilih negara</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Singapura">Singapura</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Filipina">Filipina</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="favoriteCharacter">Karakter Favorit</label>
+              <input
+                type="text"
+                class="form-control"
+                id="favoriteCharacter"
+                placeholder="Masukkan karakter favorit Anda"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="favoriteFaction">Faksi Favorit</label>
+              <input
+                type="text"
+                class="form-control"
+                id="favoriteFaction"
+                placeholder="Masukkan faksi favorit Anda"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 Dharma Rizki Geraldo. UTS Pemrograman Web.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
