@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang Belanja Interaktif</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Toko Rumah Tangga</h1>
+      <div class="semua">
+        <div class="barang">
+          <img src="kompor.jfif" alt="kompor" />
+          <div class="barang1">
+            <h2 id="kompor">Kompor</h2>
+            <p id="harga1">500.000</p>
+            <button onclick="additem('kompor','harga1')">Tambah Barang</button>
+          </div>
+        </div>
+        <div class="barang">
+          <img src="kipas.jfif" alt="kipas" />
+          <div class="barang2">
+            <h2 id="kipas">Kipas</h2>
+            <p id="harga2">700.000</p>
+            <button onclick="additem('kipas','harga2')">Tambah Barang</button>
+          </div>
+        </div>
+        <div class="barang">
+          <img src="kasur.jpg" alt="kasur" />
+          <div class="barang3">
+            <h2 id="kasur">Kasur</h2>
+            <p id="harga3">4.500.000</p>
+            <button onclick="additem('kasur','harga3')">Tambah Barang</button>
+          </div>
+        </div>
+        <div class="barang">
+          <img src="lemari.jfif" alt="lemari" />
+          <div class="barang4">
+            <h2 id="lemari">Lemari</h2>
+            <p id="harga4">1.300.000</p>
+            <button onclick="additem('lemari','harga4')">Tambah Barang</button>
+          </div>
+        </div>
+        <div class="barang">
+          <img src="tv.jfif" alt="tv" />
+          <div class="barang5">
+            <h2 id="tv">TV</h2>
+            <p id="harga5">3.000.000</p>
+            <button onclick="additem('tv','harga5')">Tambah Barang</button>
+          </div>
+        </div>
+        <div class="barang">
+          <img src="meja.jfif" alt="meja" />
+          <div class="barang6">
+            <h2 id="meja">Meja</h2>
+            <p id="harga6">1.600.000</p>
+            <button onclick="additem('meja','harga6')">Tambah Barang</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="keranjang" id="keranjang">
+        <button id="toggleCartButton" onclick="toggleKeranjang()">
+          &#9660;
+        </button>
+        <table>
+          <thead>
+            <tr>
+              <th>nama barang</th>
+              <th>harga</th>
+            </tr>
+          </thead>
+          <tbody id="listbarang"></tbody>
+        </table>
+        <div class="totalharga">
+          <p>Subtotal : <span id="subtotal">Rp 0</span></p>
+          <p>Diskon : <span id="diskon">0%</span></p>
+          <p>Total : <span id="total">Rp 0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
